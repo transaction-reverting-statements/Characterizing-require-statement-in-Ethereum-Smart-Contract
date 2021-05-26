@@ -1,0 +1,73 @@
+{
+  "contract": "0x9F91b5Aa41b9fbDae6877593910586484d291F05",
+  "tool": "oyente",
+  "start": 1614975914.1218424,
+  "end": 1614975934.137596,
+  "duration": 20.015753507614136,
+  "analysis": [
+    {
+      "errors": [
+        {
+          "line": 337,
+          "column": 28,
+          "level": "Warning",
+          "message": "Integer Underflow."
+        },
+        {
+          "line": 517,
+          "column": 17,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 322,
+          "column": 9,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 486,
+          "column": 24,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        }
+      ],
+      "file": "/contracts/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol",
+      "name": "FairHouse",
+      "evm_code_coverage": "42.4%",
+      "integer_underflow": true,
+      "integer_overflow": true,
+      "parity_multisig_bug_2": false,
+      "callstack_depth_attack_vulnerability": false,
+      "transaction-ordering_dependence_tod": false,
+      "timestamp_dependency": false,
+      "re-entrancy_vulnerability": false
+    },
+    {
+      "errors": [],
+      "file": "/contracts/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol",
+      "name": "NameFilter",
+      "evm_code_coverage": "100.0%",
+      "integer_underflow": false,
+      "integer_overflow": false,
+      "parity_multisig_bug_2": false,
+      "callstack_depth_attack_vulnerability": false,
+      "transaction-ordering_dependence_tod": false,
+      "timestamp_dependency": false,
+      "re-entrancy_vulnerability": false
+    },
+    {
+      "errors": [],
+      "file": "/contracts/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol",
+      "name": "SafeMath",
+      "evm_code_coverage": "100.0%",
+      "integer_underflow": false,
+      "integer_overflow": false,
+      "parity_multisig_bug_2": false,
+      "callstack_depth_attack_vulnerability": false,
+      "transaction-ordering_dependence_tod": false,
+      "timestamp_dependency": false,
+      "re-entrancy_vulnerability": false
+    }
+  ]
+}

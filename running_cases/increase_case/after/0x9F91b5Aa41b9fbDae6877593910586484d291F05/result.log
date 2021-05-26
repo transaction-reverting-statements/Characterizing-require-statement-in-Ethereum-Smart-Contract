@@ -1,0 +1,76 @@
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.25, The latest supported version is 0.4.19
+INFO:root:contract /after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:FairHouse:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 46.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:337:28: Warning: Integer Underflow.
+        uint commit = uint(keccak256(abi.encodePacked(reveal))
+Integer Underflow occurs if:
+    croupier = 0
+INFO:symExec:/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:517:17: Warning: Integer Overflow.
+        return (playerXpid[pidXaddr[addr]].name
+/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:323:9: Warning: Integer Overflow.
+        require (block.number <= bet.placeBlockNumber.add(BET_EXPIRATION_BLOCKS), "Blockhash can't be queried by EVM.")
+Integer Overflow occurs if:
+    croupier = 0
+/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:697:13: Warning: Integer Overflow.
+            require (pathHeaderByte >= 0x80 && pathHeaderByte <= 0xb7, "Path is an RLP string.")
+Integer Overflow occurs if:
+    canonicalBlockNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639685
+    croupier = 0
+/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:688:9: Warning: Integer Overflow.
+        require (leafHeaderByte >= 0xf7, "Receipt leaf longer than 55 bytes.")
+Integer Overflow occurs if:
+    canonicalBlockNumber = 115792089237316195423570985008687907853269984665640564039457584007913129639685
+    croupier = 0
+/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:486:24: Warning: Integer Overflow.
+        bytes32 name = NameFilter.nameFilter(nameStr)
+/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:366:9: Warning: Integer Overflow.
+        require (amount != 0, "Bet should be in an 'active' state")
+Integer Overflow occurs if:
+    croupier = 0
+    blockHash = 0
+/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:322:9: Warning: Integer Overflow.
+        require (block.number > bet.placeBlockNumber, "settleBet in the same block as placeBet, or before.")
+Integer Overflow occurs if:
+    croupier = 0
+/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:342:9: Warning: Integer Overflow.
+        require (block.number <= canonicalBlockNumber.add(BET_EXPIRATION_BLOCKS), "Blockhash can't be queried by EVM.")
+Integer Overflow occurs if:
+    canonicalBlockNumber = 227285316979991584572655118340734038500740391440638218625026621440
+    croupier = 0
+/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:375:37: Warning: Integer Overflow.
+        bytes32 entropy = keccak256(abi.encodePacked(reveal, entropyBlockHash)
+Integer Overflow occurs if:
+    croupier = 0
+    blockHash = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:NameFilter:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======

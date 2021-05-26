@@ -1,0 +1,109 @@
+{
+  "contract": "0x9F91b5Aa41b9fbDae6877593910586484d291F05",
+  "tool": "oyente",
+  "start": 1615839541.3563554,
+  "end": 1615839557.7435327,
+  "duration": 16.387177228927612,
+  "analysis": [
+    {
+      "errors": [
+        {
+          "line": 337,
+          "column": 28,
+          "level": "Warning",
+          "message": "Integer Underflow."
+        },
+        {
+          "line": 517,
+          "column": 17,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 323,
+          "column": 9,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 697,
+          "column": 13,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 688,
+          "column": 9,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 486,
+          "column": 24,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 366,
+          "column": 9,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 322,
+          "column": 9,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 342,
+          "column": 9,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 375,
+          "column": 37,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        }
+      ],
+      "file": "/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol",
+      "name": "FairHouse",
+      "evm_code_coverage": "46.6%",
+      "integer_underflow": true,
+      "integer_overflow": true,
+      "parity_multisig_bug_2": false,
+      "callstack_depth_attack_vulnerability": false,
+      "transaction-ordering_dependence_tod": false,
+      "timestamp_dependency": false,
+      "re-entrancy_vulnerability": false
+    },
+    {
+      "errors": [],
+      "file": "/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol",
+      "name": "NameFilter",
+      "evm_code_coverage": "100.0%",
+      "integer_underflow": false,
+      "integer_overflow": false,
+      "parity_multisig_bug_2": false,
+      "callstack_depth_attack_vulnerability": false,
+      "transaction-ordering_dependence_tod": false,
+      "timestamp_dependency": false,
+      "re-entrancy_vulnerability": false
+    },
+    {
+      "errors": [],
+      "file": "/after_remove_require/Gambling/0x9F91b5Aa41b9fbDae6877593910586484d291F05.sol",
+      "name": "SafeMath",
+      "evm_code_coverage": "100.0%",
+      "integer_underflow": false,
+      "integer_overflow": false,
+      "parity_multisig_bug_2": false,
+      "callstack_depth_attack_vulnerability": false,
+      "transaction-ordering_dependence_tod": false,
+      "timestamp_dependency": false,
+      "re-entrancy_vulnerability": false
+    }
+  ]
+}
