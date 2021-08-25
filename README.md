@@ -4,4 +4,4 @@ Dataset for the manuscript "Characterizing Transaction-Reverting Statements in E
 - <span style='background:#e6e6e6;'>user_purpose_taxonomy</span> folder includes the use purpose taxonomy classification results for both dapp contracts and template contracts.
 - <span style='background:#e6e6e6;'>customization_pattern_use_purpose_taxonomy</span> folder includes the use purpose taxonomy  classification results for 100 random selected customization patterns.
 - <span style='background:#e6e6e6;'>running_cases</span> folder includes the running result of the increased case and decreased case shown in RQ4, which is detected by the Oyente tool.
-- We will release the static analyzer for detecting customization patterns in RQ3 if the paper accepted.
+- Here is the description for the [analyzer](https://github.com/echohermion/solidity-parser-python) used in RQ3 for identifying customization patterns of transaction-reverting statements.
