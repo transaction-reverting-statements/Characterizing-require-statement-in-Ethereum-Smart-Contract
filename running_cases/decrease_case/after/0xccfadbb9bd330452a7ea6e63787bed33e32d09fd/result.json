@@ -1,0 +1,107 @@
+{
+  "contract": "0xccfadbb9bd330452a7ea6e63787bed33e32d09fd",
+  "tool": "oyente",
+  "start": 1615885593.1998816,
+  "end": 1615885673.0321963,
+  "duration": 79.83231472969055,
+  "analysis": [
+    {
+      "errors": [],
+      "file": "/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol",
+      "name": "BurnupGameAccessControl",
+      "evm_code_coverage": "85.7%",
+      "integer_underflow": false,
+      "integer_overflow": false,
+      "parity_multisig_bug_2": false,
+      "callstack_depth_attack_vulnerability": false,
+      "transaction-ordering_dependence_tod": false,
+      "timestamp_dependency": false,
+      "re-entrancy_vulnerability": false
+    },
+    {
+      "errors": [
+        {
+          "line": 552,
+          "column": 31,
+          "level": "Warning",
+          "message": "Integer Underflow."
+        },
+        {
+          "line": 458,
+          "column": 14,
+          "level": "Warning",
+          "message": "Integer Underflow."
+        },
+        {
+          "line": 532,
+          "column": 9,
+          "level": "Warning",
+          "message": "Integer Underflow."
+        },
+        {
+          "line": 457,
+          "column": 14,
+          "level": "Warning",
+          "message": "Integer Underflow."
+        },
+        {
+          "line": 609,
+          "column": 63,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 572,
+          "column": 38,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 44,
+          "column": 17,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 615,
+          "column": 39,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 399,
+          "column": 5,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 612,
+          "column": 43,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        },
+        {
+          "line": 270,
+          "column": 1,
+          "level": "Warning",
+          "message": "Integer Overflow."
+        }
+      ],
+      "file": "/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol",
+      "name": "BurnupGameBase",
+      "evm_code_coverage": "90.4%",
+      "integer_underflow": true,
+      "integer_overflow": true,
+      "parity_multisig_bug_2": false,
+      "callstack_depth_attack_vulnerability": false,
+      "transaction-ordering_dependence_tod": false,
+      "timestamp_dependency": false,
+      "re-entrancy_vulnerability": false
+    },
+    {
+      "errors": [],
+      "file": "/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol",
+      "name": "BurnupGameCore"
+    }
+  ]
+}

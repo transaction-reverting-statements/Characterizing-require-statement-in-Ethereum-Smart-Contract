@@ -1,0 +1,75 @@
+WARNING:root:You are using evm version 1.8.2. The supported version is 1.7.3
+WARNING:root:You are using solc version 0.4.25, The latest supported version is 0.4.19
+INFO:root:contract /after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:BurnupGameAccessControl:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:BurnupGameBase:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 90.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:552:31: Warning: Integer Underflow.
+        uint256 timeOfWeek = (block.timestamp - 345600
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:458:14: Warning: Integer Underflow.
+        x = (identifier - 1
+Integer Underflow occurs if:
+    identifier = 0
+    gameSettings.cols = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:532:9: Warning: Integer Underflow.
+        ActiveTimes(_from, _to)
+Integer Underflow occurs if:
+    cfo[msg.sender] = 255
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:457:14: Warning: Integer Underflow.
+        y = (identifier - 1
+Integer Underflow occurs if:
+    identifier = 0
+INFO:symExec:/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:609:63: Warning: Integer Overflow.
+        uint256 bonusTime = gameSettings.timeoutBonusTime.mul(gameStates[gameIndex].addressToNumberOfTiles
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:572:38: Warning: Integer Overflow.
+        uint256 _numberOfTileFlips = gameStates[gameIndex].numberOfTileFlips
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:44:17: Warning: Integer Overflow.
+    uint256 c = a + b
+Integer Overflow occurs if:
+    gameStates[gameIndex].numberOfTileFlips = 0
+    gameSettings.finalActivityTimer = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    gameSettings.numberOfFlipsToFinalActivityTimer = 0
+    gameSettings.timeoutBonusTime = 0
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:615:39: Warning: Integer Overflow.
+            currentTimeoutTimestamp = gameStates[gameIndex].gameStartTimestamp
+Integer Overflow occurs if:
+    gameStates[gameIndex].numberOfTileFlips = 0
+    gameSettings.finalActivityTimer = 0
+    gameSettings.numberOfFlipsToFinalActivityTimer = 0
+    gameStates[gameIndex].identifierToTimeoutTimestamp[identifier] = 0
+    gameSettings.timeoutBonusTime = 0
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:399:5: Warning: Integer Overflow.
+    mapping (uint256 => GameState) public gameStates
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:612:43: Warning: Integer Overflow.
+        uint256 currentTimeoutTimestamp = gameStates[gameIndex].identifierToTimeoutTimestamp
+Integer Overflow occurs if:
+    gameStates[gameIndex].numberOfTileFlips = 0
+    gameSettings.finalActivityTimer = 0
+    gameSettings.numberOfFlipsToFinalActivityTimer = 0
+    gameSettings.timeoutBonusTime = 0
+/after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:270:1: Warning: Integer Overflow.
+contract BurnupGameBase is BurnupGameAccessControl {
+^
+Spanning multiple lines.
+Integer Overflow occurs if:
+    cfo[msg.sender] = 255
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract /after_remove_require/High-risk/0xccfadbb9bd330452a7ea6e63787bed33e32d09fd.sol:BurnupGameCore:
+INFO:symExec:	============ Results ===========
